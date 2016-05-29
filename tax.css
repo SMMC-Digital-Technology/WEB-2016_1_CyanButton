@@ -23,5 +23,12 @@ header {
     background: #FBFBFB;
     height: 556px;
     width: 100%;
+    border: 1px solid #FBFBFB;
 }
 
+
+fieldset {
+    margin-left: 400px;
+    margin-right: 220px;
+    padding: 20px;
+}
