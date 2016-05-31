@@ -26,9 +26,17 @@ header {
     border: 1px solid #FBFBFB;
 }
 
+h1 { 
+
+padding-left: 30px; 
+}
+
+p { 
+padding-left: 30px;}
+
 
 fieldset {
     margin-left: 400px;
     margin-right: 220px;
-    padding: 20px;
+    float: inherit: 10px;
 }
