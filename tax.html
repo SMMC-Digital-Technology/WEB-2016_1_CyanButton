@@ -12,11 +12,50 @@
 
        
         <header>
-            <!-- Page Heading -->
-            <p><center>Tax Calculator</center></p>
+                <!-- Page Heading -->
+            <p>Zabututi Tax Calculator<br>
+            'making tax simple'</p>
+         
+        
            
-        </header>     
+        </header>    
+        
+        <nav>
+            <!-- Navigation Bar 
+home, about us, cupcakes, ordernow and contact us
+-->
+            <ul>
+                <li><a href=""> </a></li>
+            </ul>
+        </nav>
+        
          <div id="content">
+        <!--Content of page 
+            instructions, graph, input and output boxes -->
+        
+             <h1>Instructions</h1>
+             <p> Welcome to Zabatuti's Tax Calculator! <br>
+                 To Calculate your tax you will need to <br>
+                 enter your income into the box to <br>
+                 your right.  Once you have entered your<br>
+                 income the website will automaticaly calculate <br>
+                your income for you and will apear under the box, <br>
+                 next to the allocated spot.
+             </p>
+              
+             <fieldset>
+                <!-- input and out put boxes for income-->
+       <lable>Enter your income here: $<input type="number" id="box" oninput="changeStuff()"> 
+            </lable> <br>
+                        
+      <lable>Your tax is: $<output id="output"></output></lable>
+            
+       
+        
+        <script src="tax.js">
+        </script>
+           </fieldset>  
+             
             
         </div>
      </body>
