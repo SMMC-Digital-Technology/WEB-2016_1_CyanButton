@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+        <meta charset="utf-8">
+        <title>Tax Calculator</title>
+        <!-- Title states what the buisness is about clearly. -->
+        <link href="taxx.css" rel="stylesheet">
+        
+         <meta charset="utf-8">
+        <title>Graph</title>
+    
+      
+    </head>
+    <body>
+
+       
+        <header>
+                <!-- Page Heading -->
+            <h1>Zabututi Tax Calculator<br>
+            'making tax simple'</h1>
+         
+        
+           
+        </header>    
+        
+       
+        
+        <nav>
+         <ul>
+                <li><a href=""> </a></li>
+            </ul>
+        </nav>
+        
+         <div id="content">
+        <!--Content of page 
+            instructions, graph, input and output boxes -->
+        
+             <h2>Instructions</h2>
+             <p> Welcome to Zabatuti's Tax Calculator! <br>
+                 To Calculate your tax you will need to <br>
+                 enter your income into the box to your <br>
+                 right.  Once you have entered your income<br>
+                 the website will automaticaly calculate <br>
+                your income for you and will apear under <br>
+                 the box, next to the allocated spot.
+             </p>
+              
+             <fieldset>
+                <!-- input and out put boxes for income-->
+       <lable>Enter your income here: $<input type="number" id="box" oninput="changeStuff()"> 
+            </lable> <br>
+                        
+      <lable>Your tax is: $<output id="output"></output></lable>
+            
+       
+        
+        <script src="tax.js">
+        </script>
+           </fieldset>  
+             
+              <h2>Graph</h2>
+             
+                <p> This graph displays the rise and fall of Tax over time periods. The graph has been designed for you to have a clearer understanding of your own tax output. The tax calculator shown above will calculate your tax so you dont have too. 
+        </p>
+             
+        <div id="graph"></div>
+             
+        <script src="plotly.js">
+        <scirpt src="tax.js">
+            
+       
+            
+            
+             
+             </div>
+            
+        </div>
+     </body>
+</html>
