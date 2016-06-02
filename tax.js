@@ -1,7 +1,4 @@
-function calculateTax (principle, rate, time) {
-    return principle * rate * time;
-}
-function calculateTax(income) {
+function changeStuff (income) {
     var tax;
     if (income < 16000) {
         tax = 0;
@@ -18,13 +15,22 @@ function calculateTax(income) {
     return tax;
 }
 
-function calculateTax() {
-    var input = document.getElementById("box");
-    var number = input.value;
-    var output = document.getElementById("output");
-    output.value = calculateTax(number);
+/**
+ * Tutorial on making graphs with plotly.js
+ **/
+
+/**
+ * This function calculates the interest owed on a simple interest loan.
+ * Parameters: principle, rate (per year) and time (in years).
+ * Returns: the simple interest
+ */
+function simpleInterest(principle, rate, time) {
+    return principle * rate * time;
 }
 
+/**
+ * This function draws a graph
+ */
 function drawGraph() {
 
     // declare all variables (variables inside a function are created when the function is called)
@@ -56,7 +62,7 @@ function drawGraph() {
     layout = {
         title: "A simple graph in Plotly",
         yaxis: {
-            title: "Tax", // give the axis a label
+            title: "Income", // give the axis a label
             zerolinewidth: 1.5 // makes the zero line thicker
         },
         xaxis: {
