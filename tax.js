@@ -1,4 +1,4 @@
-function calculate tax (principle, rate, time) {
+function calculateTax (principle, rate, time) {
     return principle * rate * time;
 }
 function calculateTax(income) {
@@ -18,7 +18,7 @@ function calculateTax(income) {
     return tax;
 }
 
-function changeStuff() {
+function calculateTax() {
     var input = document.getElementById("box");
     var number = input.value;
     var output = document.getElementById("output");
@@ -56,11 +56,11 @@ function drawGraph() {
     layout = {
         title: "A simple graph in Plotly",
         yaxis: {
-            title: "y-axis", // give the axis a label
+            title: "Tax", // give the axis a label
             zerolinewidth: 1.5 // makes the zero line thicker
         },
         xaxis: {
-            title: "x-axis",
+            title: "Time",
             zerolinewidth: 1.5,
            //range; [0,5] //sets a minimum and maximum value for the axis
         }
