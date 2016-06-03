@@ -3,8 +3,9 @@
     <head>
     
         <meta charset="utf-8">
+        <!-- What shows up on tab -->
         <title>Tax Calculator</title>
-        <!-- Title states what the buisness is about clearly. -->
+       
         <link href="tax.css" rel="stylesheet">
         
          <meta charset="utf-8">
@@ -18,14 +19,11 @@
         <header>
                 <!-- Page Heading -->
             <h1>Zabututi Tax Calculator<br>
-            'making tax simple'</h1>
-         
-        
+                'making tax simple'</h1>
            
         </header>    
         
-       
-        
+              
         <nav>
          <ul>
                 <li><a href=""> </a></li>
@@ -39,15 +37,17 @@
              <h2>Instructions</h2>
              <p> Welcome to Zabatuti's Tax Calculator! <br>
                  To Calculate your tax you will need to <br>
-                 enter your income into the box to <br>
-                 your right.  Once you have entered your<br>
-                 income the website will automaticaly calculate <br>
-                your income for you and will apear under the box, <br>
-                 next to the allocated spot.
+                 enter your income into the box to your <br>
+                 right.  Once you have entered your income<br>
+                 the website will automaticaly calculate <br>
+                your income for you and will apear under <br>
+                 the box, next to the allocated spot.
              </p>
               
              <fieldset>
-                <!-- input and out put boxes for income-->
+                <!-- input and out put boxes for income 
+            NOTE: the output box is not visable on the website until an income is entered.
+            NOTE2: the out put box is not a box. Just the tax showes up-->
        <lable>Enter your income here: $<input type="number" id="box" oninput="changeStuff()"> 
             </lable> <br>
                         
@@ -60,20 +60,18 @@
            </fieldset>  
              
               <h2>Graph</h2>
-             
-                <p> This graph displays the rise and fall of Tax over time periods. The graph has been designed for you to have a clearer understanding of your own tax output. The tax calculator shown above will calculate your tax so you dont have too. 
+             <!-- information about what the graph displays -->
+                <p> This graph displays the income tax payed on incomes between 0 and 250000. The graph has been designed for you to have a clearer understanding of your own tax output. The tax calculator shown above will calculate your tax so you dont have too. 
         </p>
              
         <div id="graph"></div>
              
-        <script src="plotly.js">
-        <scirpt src="tax.js">
+             <script src="plotly.js"></script>
+            
+             <script src="tax.js"></script>
             
        
             
-            
-             
-             </div>
             
         </div>
      </body>
